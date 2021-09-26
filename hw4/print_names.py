@@ -3,7 +3,5 @@ import random
 list1 = ["Rayat", "William", "Michelle", "Lucas", "Ivan"];
 list2 = ["Yoonah", "Joshua", "Alif", "Josephine", "Andrew"];
 
-for i in list1:
-    print(i)
-for i in list2:
-    print(i)
+print(list1[random.randint(0, len(list1) - 1)])
+print(list2[random.randint(0, len(list2) - 1)])
