@@ -19,4 +19,8 @@ K06 -- Random Occupation Picker </br>
 - Markdown is a robust typing language that offers users the ability to style their text in a matter of seconds.  It combines the structure of html with the aesthetic prowess of css in an easy to learn language.
 
 ## Weighted randomized selection
-- 
+- We randomly generated a number from 0 to 1000, and stored it into the variable x.
+We then iterated through the function parameter reader, a dictionary.
+We then added each of the value elements, times 10 (this is done to accomodate the fact that a random number is chosen out of 1000), to the variable y, initialized to 0.
+Whenever y is greater than x, the program will print out the key associated to the current value, and stop.
+The program selection is weighted due to the intervals set by the percentages.
