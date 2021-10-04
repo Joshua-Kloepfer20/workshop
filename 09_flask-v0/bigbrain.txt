@@ -1,0 +1,21 @@
+The Best Duo - Alif Abdullah, Joshua Kloepfer
+SoftDev
+K09 -- To respond to the questions posed in the app.py program, and reflect on and respond to our answers after running the program via flask.
+2021-10-02
+
+Q0 Response: This looks like in java when you make a variable equal to a function with a return and the variable becomes the value returned.
+
+My answer has not changed.
+
+Q1 Response: In the string it generally means a newline, tab or other stuff like that.
+
+My answer has not changed
+
+Q2 Response: It will print the variable __name__ whatever that is.
+
+Q3 Response: I do not think it will appear anywhere as the function is not called.
+
+Q4 Response: Reminds me of calling a function within an object in Java
+
+NOTEWORTHY NOTABLES: 
+I could not access the website.
