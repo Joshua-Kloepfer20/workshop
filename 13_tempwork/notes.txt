@@ -1,0 +1,5 @@
+When I put </br> in the return string it did not print with breaks it printed the br.  It did the same thing with \n but it did not print the \n 
+
+
+EGO
+Its very important when programming to remove ego bcause it is very collaborative and it is necessary to be able to listen to other's thoughts and ideas while also accepting your mistakes

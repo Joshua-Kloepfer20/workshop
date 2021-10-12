@@ -19,7 +19,7 @@ def randomJob():
         for i in finalDict:
                 y += finalDict[i] * 10
                 if (y > x):
-                        return render_template('tablified.html', foo="Team name", heading="Team name -- Joshua Kloepfer, Mark Zhu", list="List of occupations: \n" + str(list(finalDict)), chosen= "\n\nChosen Occupation: " + str(i))
+                        return render_template('tablified.html', foo="duoing devos", heading="duoing devos -- Joshua Kloepfer, Mark Zhu", list="List of occupations: \n" + str(list(finalDict)), chosen= "\n\nChosen Occupation: " + str(i))
                         break
 def template():
     return render_template('tablified.html',foo="Team name")
