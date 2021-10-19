@@ -78,8 +78,6 @@ def auth():
         else:
             #if for some reason the session isn't here we'll just redirect them back
             return render_template("login.html", no_login=True)
-
-
 if __name__ == "__main__":
     app.debug = True
     app.run()
