@@ -24,7 +24,6 @@ Roster - meant to have student names, age of student, and id
 	name : TEXT
 	age  : INTEGER
 	id   : INTEGER
-
 Classes - meant to have course names, course mark, and id
 	name : TEXT
 	mark : INTEGER
