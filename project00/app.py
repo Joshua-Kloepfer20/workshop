@@ -30,9 +30,6 @@ def auth():
     if user != None:
         return render_template("response.html")
     return render_template("failure.html")
-@app.route("/login", methods=["GET"])
-def login():
-    return render_template("login.html")
 @app.route("/make_account", methods=["GET", "POST"])
 def make():
     db = sqlite3.connect("users.db")
