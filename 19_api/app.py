@@ -10,8 +10,7 @@ app = Flask(__name__)
 def main():
     nasa = urllib.request.urlopen('https://api.nasa.gov/planetary/apod?api_key=pJkgjfYApMvTrcMw0O7hdO7Chooqu9b4jcuDu2zC')
     nasa_text = json.load(nasa)
-    picture = (nasa_text['url']) 
-    return render_template('main.html', pic = picture)
+    return render_template('main.html', pic = nasa_text['url'], explanation = nasa_text['explanation'])
 
 
 if __name__ == '__main__':
