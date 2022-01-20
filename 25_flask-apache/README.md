@@ -28,7 +28,7 @@ Flask is not built to serve -- on its own -- persistent or high-traffic sites. A
     ```
 3. install flask
     ```
-    sudo apt-get python3-pip
+    sudo apt-get install python3-pip
     sudo apt install python3.8-venv
     sudo python3 -m venv venv
     source venv/bin/activate
