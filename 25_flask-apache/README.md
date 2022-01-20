@@ -57,5 +57,5 @@ Accurate as of (last update): 2022-01-20
 Clyde "Thluffy" Sinclair  
 Joshua Kloepfer, pd2  
 Yoonah Chang, pd2  
-Patrick Ging, pd2
+Patrick Ging, pd2  
 Rayat Roy, pd1  
