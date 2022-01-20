@@ -3,3 +3,8 @@ SoftDev
 K25 -- Apache, Jump On It
 2022-01-14
 time spent: 1 hr
+
+
+- by default apache2 runs python 2.7 unless you do sudo apt-get install libapache2-mod-wsgi-py3
+- ServiceName in the config file can be either the ip address or the domain name (so a domain name is not necessary)
+- to print out error messages use sudo cat /var/log/apache2/error.log
