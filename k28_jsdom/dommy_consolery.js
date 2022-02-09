@@ -39,7 +39,6 @@ var f = function(x) {
   return j+x;
 };
 
-
 //instantiate an object
 var o = { 'name' : 'Thluffy',
           age : 15,
@@ -121,7 +120,13 @@ function gcd(a, b) {
 
 }
 
+var d  = document.getElementById('item');
+d.addEventListener('click', red);
+
 //insert your implementations here for...
 // FIB
 // FAC
 // GCD
+//element.remove(), element.InnerHTML
+//element.appendChild(<ELEMENT>)
+//element.addEventListener(<EVENT>, <FUNCTION>)
