@@ -1,0 +1,8 @@
+Team ApesTogetherStrong :: Joshua Kloepfer, Yaying Liang Li
+SoftDev pd1
+K29 -- DOMfoolery++
+2022-02-010
+
+* addEventListener to give arguments do function() {call(args)}
+* do getElement.innerHTML to change the what the text is
+* Math.floor() floors the number
