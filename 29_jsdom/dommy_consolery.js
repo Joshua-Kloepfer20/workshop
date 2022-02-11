@@ -123,8 +123,8 @@ var g  = document.getElementById('gcd');
 var fi  = document.getElementById('fib');
 var fa  = document.getElementById('fact');
 g.addEventListener('click', function() {div1.innerHTML = gcd(Math.floor(Math.random() * 100), Math.floor(Math.random() * 100))});
-fi.addEventListener('click', function() {div2.innerHTML = fib(Math.random() * 10)});
-fa.addEventListener('click', function() {div3.innerHTML = fact(Math.random() * 10)})
+fi.addEventListener('click', function() {div2.innerHTML = fib(Math.floor(Math.random() * 10))});
+fa.addEventListener('click', function() {div3.innerHTML = fact(Math.floor(Math.random() * 10))})
 
 //insert your implementations here for...
 // FIB
