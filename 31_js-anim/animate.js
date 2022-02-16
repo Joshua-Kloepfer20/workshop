@@ -1,7 +1,7 @@
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-// SoftDev pd0
+// Team ApesTogetherStrong :: Yaying Liangli, Joshua Kloepfer
+// SoftDev pd1
 // K31 -- canvas based JS animation
-// 2022-02-15t
+// 2022-02-17
 
 // model for HTML5 canvas-based animation
 
@@ -17,9 +17,9 @@ var stopButton = document.getElementById("buttonStop");// GET STOP BUTTON
 var ctx = c.getContext("2d");// YOUR CODE HERE
 
 //set fill color to team color
-ctx.fillStyle = "light blue";// YOUR CODE HERE
+ctx.fillStyle = "blue";// YOUR CODE HERE
 
-var requestID;  //init global var for use with animation frames
+var requestID = null;  //init global var for use with animation frames
 
 
 //var clear = function(e) {
@@ -33,17 +33,28 @@ var clear = (e) => {
 var radius = 0;
 var growing = true;
 
-
 //var drawDot = function() {
 var drawDot = () => {
   console.log("drawDot invoked...");
 
-  clear;
+  clear();
+  if (growing == true && radius >= 250) {
+    growing = false;
+  }
+  else if (growing == false && radius <= 1) {
+    growing = true;
+  }
+  if (growing == true) {
+    radius += 5;
+  }
+  else {
+    radius -= 5;
+  }
   ctx.beginPath();
-  ctx.arc(mouseX, mouseY, 100, 0, 2*Math.PI); //summon a circle!: (x,y,radius,startAngle,endAngle)
+  ctx.arc(250, 250, radius, 0, 2*Math.PI); //summon a circle!: (x,y,radius,startAngle,endAngle)
   ctx.fill();
 //  ctx.stroke();
-  window.requestAnimationFrame();
+    requestID = window.requestAnimationFrame(drawDot);
 
   // OUR CODE HERE
   /*
@@ -64,6 +75,7 @@ var drawDot = () => {
 //var stopIt = function() {
 var stopIt = () => {
   console.log("stopIt invoked...")
+  requestID = window.cancelAnimationFrame(requestID);
   console.log( requestID );
 
   // YOUR CODE HERE
@@ -77,5 +89,5 @@ var stopIt = () => {
 };
 
 
-dotButton.addEventListener( "click", drawDot );
+dotButton.addEventListener( "click", function() {if (requestID == null) {drawDot()}} );
 stopButton.addEventListener( "click",  stopIt );
