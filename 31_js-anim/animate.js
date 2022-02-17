@@ -36,6 +36,7 @@ var growing = true; //is the circle growing?
 //var drawDot = function() {
 var drawDot = () => {
   console.log("drawDot invoked...");
+  window.cancelAnimationFrame(requestID);
 
   clear();
   if (growing == true && radius >= 250) { //250 = max radius of canvas (500/2)
@@ -87,6 +88,6 @@ var stopIt = () => {
 };
 
 
-dotButton.addEventListener( "click", function() {if (requestID == null) {drawDot()}} );
+dotButton.addEventListener( "click", drawDot} );
 //if requestID != null, then it means the circle is growing / animating --> even if user clicks button, the fxn drawDot won't be called
 stopButton.addEventListener( "click",  stopIt );
