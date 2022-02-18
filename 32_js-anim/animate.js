@@ -122,4 +122,4 @@ var screen = () => {
 dotButton.addEventListener( "click", drawDot );
 //if requestID != null, then it means the circle is growing / animating --> even if user clicks button, the fxn drawDot won't be called
 stopButton.addEventListener( "click",  stopIt );
-screenButton.addEventListener("click", function() {velx = 1; vely = 1; x = Math.round(Math.random() * 400 + 50); y = Math.round(Math.random() * 400 + 50); screen();});
+screenButton.addEventListener("click", function() {velx = 1; vely = 1; x = Math.round(Math.random() * 300); y = Math.round(Math.random() * 400); screen();});
