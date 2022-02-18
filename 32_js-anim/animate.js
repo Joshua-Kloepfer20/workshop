@@ -1,7 +1,7 @@
-// Team ApesTogetherStrong :: Yaying Liangli, Joshua Kloepfer
+// Team LeagueOfFailures :: Mark Zhu, Joshua Kloepfer
 // SoftDev pd1
-// K31 -- canvas based JS animation
-// 2022-02-17
+// K32 -- More Moving Parts
+// 2022-02-18
 
 // model for HTML5 canvas-based animation
 
@@ -15,6 +15,8 @@ var stopButton = document.getElementById("buttonStop");// GET STOP BUTTON
 var screenButton = document.getElementById("buttonScreen");
 //prepare to interact with canvas in 2D
 var ctx = c.getContext("2d");// YOUR CODE HERE
+var image = new Image();
+image.src = "logo_dvd.jpg";
 
 //set fill color to team color
 ctx.fillStyle = "blue";// YOUR CODE HERE
@@ -95,22 +97,23 @@ var screen = () => {
   window.cancelAnimationFrame(requestID);
   clear()
   console.log("screen saver")
-  if (x + 50 >= 500) {
+  if (x + 200 >= 500) {
     velx = -1;
   }
-  if (x - 50 <= 0) {
+  if (x <= 0) {
     velx = 1
   }
-  if (y + 50 >= 500) {
+  if (y + 100 >= 500) {
     vely = -1;
   }
-  if (y - 50 <= 0) {
+  if (y <= 0) {
     vely = 1
   }
   x += velx;
   y += vely;
   ctx.beginPath();
-  ctx.arc(x, y, 50, 0, 2*Math.PI); //summon a circle!: (x,y,radius,startAngle,endAngle)
+//  ctx.arc(x, y, 50, 0, 2*Math.PI); //summon a circle!: (x,y,radius,startAngle,endAngle)
+  ctx.drawImage(image, x, y, 200, 100);
   ctx.fill();
   requestID = window.requestAnimationFrame(screen);
 };
